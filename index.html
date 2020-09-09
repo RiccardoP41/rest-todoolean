@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Todoolean</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    </head>
+    <body>
+        <input id="input" type="text" name="" value="" placeholder="Inserisci una nuova voce">
+        <button type="button" class="click" name="button">Inserisci</button>
+
+        <ol class="todo"></ol>
+
+        <script id="entry-template" type="text/x-handlebars-template">
+          <li data-id="{{id}}">{{text}} <span class="cross"><i class="fas fa-times-circle"></i></span></li>
+        </script>
+
+        <script src="js/script.js" charset="utf-8"></script>
+    </body>
+</html>
