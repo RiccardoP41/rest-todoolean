@@ -15,7 +15,11 @@
         <ol class="todo"></ol>
 
         <script id="entry-template" type="text/x-handlebars-template">
-          <li data-id="{{id}}">{{text}} <span class="cross"><i class="fas fa-times-circle"></i></span></li>
+          <li data-id="{{id}}">
+              <span class="elemento">{{text}}</span>
+              <input class="modifica hidden"type="text" value="{{text}}">
+              <span class="cross"><i class="fas fa-times-circle"></i></span>
+          </li>
         </script>
 
         <script src="js/script.js" charset="utf-8"></script>
